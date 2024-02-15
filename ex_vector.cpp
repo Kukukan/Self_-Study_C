@@ -10,6 +10,8 @@ int main()
     vector<int> v;
     //vector<int> v(n); // khai bao vector nhung da co san n phan tu. v[n]: mang cac vectores
     //int a[n] = v(n)
+
+    //vector<int> v(n, 100);    // khai bao vector co n phan tu, moi phan tu co gia tri = 100.
     v.push_back(10);
     v.push_back(20);
     v.push_back(30);
