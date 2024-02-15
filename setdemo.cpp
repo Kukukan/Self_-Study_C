@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
         s.insert(i);
     }
     cout << "So phan tu trong set: " << s.size() << endl;
-    if (s.count(5) !=0)
+    if (s.find(5) != s.end())
     {
         cout << "Found !\n";
     }
