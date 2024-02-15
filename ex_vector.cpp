@@ -7,15 +7,16 @@ size(): kich thuoc vector
 */
 int main()
 {
-    vector<int> v;
+    //vector<int> v;
     //vector<int> v(n); // khai bao vector nhung da co san n phan tu. v[n]: mang cac vectores
     //int a[n] = v(n)
-
-    //vector<int> v(n, 100);    // khai bao vector co n phan tu, moi phan tu co gia tri = 100.
-    v.push_back(10);
-    v.push_back(20);
-    v.push_back(30);
-    v.push_back(40);
+    int n;
+    cin >> n;
+    vector<int> v(n, 100);    // khai bao vector co n phan tu, moi phan tu co gia tri = 100.
+    // v.push_back(10);
+    // v.push_back(20);
+    // v.push_back(30);
+    // v.push_back(40);
     //vector<int>::iterator it = v.begin();
     /*cout<< v.size() <<" " << v.capacity()<<endl;*/
     // for(int i=v.size()-1; i>=0;--i)
@@ -29,9 +30,14 @@ int main()
     // }
 
     //duyet bang iterator
-    for (auto it = v.begin(); it!= v.end(); ++it)
+    // for (auto it = v.begin(); it!= v.end(); ++it)
+    // {
+    //     cout << *it << endl;
+    // }
+
+    for (int i = 0; i < n; ++i)
     {
-        cout << *it << endl;
+        cout << v[i] << endl;
     }
     return 0;
 }
