@@ -4,17 +4,10 @@ using namespace std;
 
 int main()
 {
-    cout << INT_MIN << " " << INT_MAX <<endl;
-    cout << LLONG_MIN << " " << LLONG_MAX <<endl;
+    int n;
+    cin >> n;
 
-    long long x,y,tong,hieu,tich;
-    double thuong;
-    cin>>x>>y;
-
-    tong = x + y;
-    hieu = x - y;
-    tich = x*y;
-    thuong = 1.0*x/y;
-    cout << fixed << setprecision(2) << tong << " " << hieu << " " << tich << " " << thuong <<endl;
+    long long a = (long long) (n*n*n + 3*n*n + n +1);
+    cout << a << endl;
     return 0;
 }
