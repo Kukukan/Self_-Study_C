@@ -19,6 +19,7 @@ vector<int> paraseStr(string s) {
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
     string s;
+    cin.ignore(0);
     getline(cin, s);
     vector<int> ans = paraseStr(s);
     for (int i = 0; i < ans.size() ; ++i) {
